@@ -7,9 +7,10 @@ with open('README.md') as readme:
 
 setup(
     name='django-filter-addons',
-    version='0.0.0',
+    version='0.1.0',
     description='A collection of addons for django-filter',
     long_description=_README,
+    long_description_content_type='text/markdown',
     author='Xavier Dutreilh',
     author_email='xavier@dutreilh.com',
     maintainer='Xavier Dutreilh',
