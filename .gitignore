@@ -1,0 +1,4 @@
+/.coverage
+/.tox/
+/django_filter_addons.egg-info/
+**/__pycache__/
