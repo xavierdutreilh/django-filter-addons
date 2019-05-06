@@ -26,13 +26,13 @@ from django_filters_addons.filters import OrderingFilter
 class UserFilter(FilterSet):
     account = CharFilter(field_name='username')
     sort = OrderingFilter(
-        fields={'username': 'account', 'email': 'email'},
-        field_cases={'account': Lower},
+        fields={'username': 'account', 'first_name': 'first_name', 'last_name': 'last_name', 'email': 'email'},
+        field_cases={'username': Lower, 'email': Lower},
     )
 
     class Meta:
         model = User
-        fields = ('email',)
+        fields = ('first_name', 'last_name', 'email')
 ```
 
 ## License
