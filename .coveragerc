@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = django_filters_addons
+source = django_filters_addons, tests
 
 [report]
 show_missing = True
